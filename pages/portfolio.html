@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets et réalisations de Joël Marvin Tientcheu Siani.">
+    <title>Projets | Joël Marvin</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Joël<span>Dev.</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="experience.html">Parcours</a></li>
+                    <li><a href="portfolio.html" class="active">Projets</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="theme-toggle"><i class="fas fa-moon"></i></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="portfolio" class="section-padding" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mes Réalisations</span>
+                <h2 class="section-title">Projets Récents</h2>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web & SaaS</button>
+                <button class="filter-btn" data-filter="mobile">Mobile & IA</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="../media/Capture d'écran 2025-11-12 141956.png" alt="Plateforme ALN">
+                        <div class="portfolio-overlay">
+                            <a href="https://lnkd.in/guECUgf6" class="btn btn-outline" style="color:white; border-color:white;">Détails</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Angular & Laravel</span>
+                        <h3>Plateforme Intégrée ALN</h3>
+                        <p>Digitalisation complète de l'Alliance des Leaders Nationaux. Gestion des membres, cartes QR Code, événements et blog.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="mobile">
+                    <div class="portfolio-img">
+                        <img src="../media/Finance Management - Mobile App.jpeg" alt="SmartWallet">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-outline" style="color:white; border-color:white;">APK</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • IA Finance</span>
+                        <h3>SmartWallet AI</h3>
+                        <p>Gestion financière intelligente avec scan de reçus (OCR) et conseils d'épargne via DeepSeek API.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Ionic</span>
+                            <span class="tech-tag">DeepSeek API</span>
+                            <span class="tech-tag">Tesseract</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="../media/Capture d'écran 2026-01-02 114135.png" alt="SGIPA">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Industrie</span>
+                        <h3>SGIPA Industriel</h3>
+                        <p>Système de gestion de production et d'approvisionnement pour PME. Traçabilité complète et tableaux de bord.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">RxJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="../media/Capture d'écran 2025-08-30 163043.png" alt="Boloungui">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Immobilier</span>
+                        <h3>Boloungui</h3>
+                        <p>Plateforme de recherche de logement à l'étranger. UX optimisée et filtres de recherche avancés.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="../media/Capture d'écran 2026-02-11 162134.png" alt="NextDoc">
+                        <div class="portfolio-overlay">
+                            <a href="https://nextdoc-tau.vercel.app/" class="btn btn-outline" style="color:white; border-color:white;">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • Services Professionnels</span>
+                        <h3>NextDoc</h3>
+                        <p>Plateforme de création de documents professionnels sur mesure : CV, rapports, présentations, lettres et business plans. Combinaison d'expertise humaine et IA.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Web Design</span>
+                            <span class="tech-tag">IA</span>
+                            <span class="tech-tag">Services</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="../media/Capture d'écran 2026-02-11 162202.png" alt="SJI Innova">
+                        <div class="portfolio-overlay">
+                            <a href="https://campus-event-three.vercel.app/" class="btn btn-outline" style="color:white; border-color:white;">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • Événement Académique</span>
+                        <h3>Prix SJI INNOVA 2026</h3>
+                        <p>Site web du concours d'innovation de l'Université Saint Jean Ingénieur. Plateforme valorisant l'innovation, l'entrepreneuriat et l'esprit créatif des étudiants.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Event Website</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2 class="logo" style="color:white; margin-bottom:10px;">Joël<span>Dev.</span></h2>
+            <p>Innovation, créativité et excellence technique.</p>
+            <p style="margin-top:30px; font-size:0.9rem; color:#888;">&copy; 2026 Joël Marvin Tientcheu Siani. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

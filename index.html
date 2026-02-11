@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Joël Marvin Tientcheu Siani - Développeur Fullstack & Mobile, Expert IA.">
+    <title>Joël Marvin | Portfolio Développeur & Innovateur</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- CSS externe -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER & NAV ========== -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Joël<span>Dev.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Parcours</a></li>
+                    <li><a href="#portfolio">Projets</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="theme-toggle"><i class="fas fa-moon"></i></li>
+                </ul>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+        <div class="particles-container" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-text reveal-left">
+                <h3>Bonjour, je suis</h3>
+                <h1>Joël Marvin<br><span class="typing-text gradient-text"></span></h1>
+                <p>Étudiant ingénieur en conception d'applications. Je transforme des idées complexes en solutions digitales innovantes, de l'intelligence artificielle au développement web.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-magnetic">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline btn-magnetic">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-img-wrapper reveal-right">
+                <div class="hero-blob"></div>
+                <div class="hero-img"></div>
+                <div class="hero-floating-badge"><i class="fas fa-code" style="color:var(--accent);margin-right:6px"></i> Fullstack</div>
+                <div class="hero-floating-badge"><i class="fas fa-brain" style="color:var(--accent);margin-right:6px"></i> IA</div>
+                <div class="hero-floating-badge"><i class="fas fa-mobile-alt" style="color:var(--accent);margin-right:6px"></i> Mobile</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section id="achievements">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal" style="transition-delay:0.1s">
+                    <h2><i class="fas fa-trophy"></i></h2>
+                    <p>Lauréat Hackathon 2025</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay:0.2s">
+                    <h2>5+</h2>
+                    <p>Projets Majeurs</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay:0.3s">
+                    <h2><i class="fas fa-palette"></i></h2>
+                    <p>Responsable Design Club Info</p>
+                </div>
+                <div class="stat-item reveal" style="transition-delay:0.4s">
+                    <h2>10+</h2>
+                    <p>Technologies Maîtrisées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Qui suis-je ?</span>
+                <h2 class="section-title">À propos de moi</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Passionné par l'innovation technologique et l'entrepreneuriat, je suis un développeur Fullstack orienté solutions. Mon objectif est de concevoir des outils performants qui améliorent le quotidien, en combinant rigueur technique et créativité.</p>
+                    <p>Actuellement en cycle licence à l'Institut Saint Jean, je me distingue par mon implication associative (Responsable design du club informatique) et ma capacité à mener des projets d'équipe, comme en témoigne ma victoire au Hackathon "Back to School" de TapTap Send.</p>
+                    
+                    <div class="about-highlights">
+                        <span class="highlight-tag"><i class="fas fa-code"></i> Clean Code</span>
+                        <span class="highlight-tag"><i class="fas fa-brain"></i> Intelligence Artificielle</span>
+                        <span class="highlight-tag"><i class="fas fa-tasks"></i> Gestion de Projet</span>
+                    </div>
+                    <br>
+                    <a href="media/Tientcheu Siani Joël Marvin Cv (1).pdf" class="btn"><i class="fas fa-download"></i> Télécharger CV</a>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4><i class="fas fa-laptop-code"></i> Frontend & Mobile</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                        <small>Angular, Ionic, TypeScript, HTML/SCSS</small>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-server"></i> Backend & Database</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                        <small>Django (Python), Laravel (PHP), MySQL</small>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4><i class="fas fa-robot"></i> IA & APIs</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                        <small>DeepSeek API, Tesseract OCR, Google Drive API</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section-padding" style="background-color: var(--secondary-bg);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ce que je fais</span>
+                <h2 class="section-title">Mes Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glow-card reveal" style="transition-delay:0.1s">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Développement Web</h3>
+                    <p>Conception de plateformes robustes et scalables (Angular/Laravel/Django). De la gestion B2B aux tableaux de bord administratifs.</p>
+                </div>
+                <div class="service-card glow-card reveal" style="transition-delay:0.2s">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Applications Mobiles & IA</h3>
+                    <p>Développement d'apps hybrides (Ionic) intégrant des fonctionnalités intelligentes : OCR, prédictions financières et assistants IA.</p>
+                </div>
+                <div class="service-card glow-card reveal" style="transition-delay:0.3s">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX & Design</h3>
+                    <p>Création d'interfaces modernes et intuitives avec Figma. Identité visuelle et supports marketing (Canva/Photoshop).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mon cheminement</span>
+                <h2 class="section-title">Mon Parcours</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Août 2025 - Déc. 2025</h4>
+                        <h3>Développeur Fullstack (Projet ALN)</h3>
+                        <p>Conception de la Plateforme Numérique Intégrée de l'Alliance des Leaders Nationaux. Architecture distribuée (Angular/Laravel) pour la gestion des membres, événements et cotisations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Juillet 2025 - Août 2025</h4>
+                        <h3>Stagiaire Frontend - Boloungui</h3>
+                        <p>Développement d'une plateforme de recherche de logement. Création de maquettes UX/UI, intégration Angular et mise en place de filtres de recherche avancés.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Juin 2025</h4>
+                        <h3>Finaliste Enovation Factory (FassiAgro)</h3>
+                        <p>Projet sélectionné parmi le top 44 national. Développement d'une plateforme B2B agricole connectant producteurs et acheteurs.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Juillet 2024 - Août 2024</h4>
+                        <h3>Stage Création de Contenu - NTFOODS Tanty</h3>
+                        <p>Analyse de l'identité numérique, création de supports visuels (Flyers, Vidéos) et modules de formation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mes Réalisations</span>
+                <h2 class="section-title">Projets Récents</h2>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web & SaaS</button>
+                <button class="filter-btn" data-filter="mobile">Mobile & IA</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="media/Capture d'écran 2025-11-12 141956.png" alt="Plateforme ALN">
+                        <div class="portfolio-overlay">
+                            <a href="https://lnkd.in/guECUgf6" class="btn btn-outline" style="color:white; border-color:white;">Détails</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Angular & Laravel</span>
+                        <h3>Plateforme Intégrée ALN</h3>
+                        <p>Digitalisation complète de l'Alliance des Leaders Nationaux. Gestion des membres, cartes QR Code, événements et blog.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="mobile">
+                    <div class="portfolio-img">
+                        <img src="media/Finance Management - Mobile App.jpeg" alt="SmartWallet">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-outline" style="color:white; border-color:white;">APK</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • IA Finance</span>
+                        <h3>SmartWallet AI</h3>
+                        <p>Gestion financière intelligente avec scan de reçus (OCR) et conseils d'épargne via DeepSeek API.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Ionic</span>
+                            <span class="tech-tag">DeepSeek API</span>
+                            <span class="tech-tag">Tesseract</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="media/Capture d'écran 2026-01-02 114135.png" alt="SGIPA">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Industrie</span>
+                        <h3>SGIPA Industriel</h3>
+                        <p>Système de gestion de production et d'approvisionnement pour PME. Traçabilité complète et tableaux de bord.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">RxJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="media/Capture d'écran 2025-08-30 163043.png" alt="Boloungui">
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2025 • Immobilier</span>
+                        <h3>Boloungui</h3>
+                        <p>Plateforme de recherche de logement à l'étranger. UX optimisée et filtres de recherche avancés.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="media/Capture d'écran 2026-02-11 162134.png" alt="NextDoc">
+                        <div class="portfolio-overlay">
+                            <a href="https://nextdoc-tau.vercel.app/" class="btn btn-outline" style="color:white; border-color:white;">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • Services Professionnels</span>
+                        <h3>NextDoc</h3>
+                        <p>Plateforme de création de documents professionnels sur mesure : CV, rapports, présentations, lettres et business plans. Combinaison d'expertise humaine et IA.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Web Design</span>
+                            <span class="tech-tag">IA</span>
+                            <span class="tech-tag">Services</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card show" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="media/Capture d'écran 2026-02-11 162202.png" alt="SJI Innova">
+                        <div class="portfolio-overlay">
+                            <a href="https://campus-event-three.vercel.app/" class="btn btn-outline" style="color:white; border-color:white;">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-date">2026 • Événement Académique</span>
+                        <h3>Prix SJI INNOVA 2026</h3>
+                        <p>Site web du concours d'innovation de l'Université Saint Jean Ingénieur. Plateforme valorisant l'innovation, l'entrepreneuriat et l'esprit créatif des étudiants.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Event Website</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Contact</span>
+                <h2 class="section-title">Travaillons Ensemble</h2>
+            </div>
+
+            <div class="contact-container reveal-scale">
+                <div class="contact-intro">
+                    <h3>Parlons de votre prochain projet</h3>
+                    <p>Je suis toujours à la recherche de nouveaux défis. Que vous ayez une question ou juste envie de dire bonjour, ma boîte de réception est ouverte !</p>
+                </div>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>tientcheumarvin@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Téléphone</h4>
+                        <p>+237 621 377 523</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Localisation</h4>
+                        <p>Simbock, Yaoundé, Cameroun</p>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://www.linkedin.com/in/jo%C3%ABl-marvin-tientcheu-siani-8911992ba/" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/tientcheu01" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/237621377523" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALERIE ========== -->
+    <section id="gallery" class="section-padding gallery-section" style="background-color: var(--secondary-bg);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">En images</span>
+                <h2 class="section-title">Ma Galerie</h2>
+            </div>
+        </div>
+
+        <div class="gallery-wrapper">
+            <button class="gallery-nav prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-nav next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="gallery-track" id="galleryTrack">
+                <!-- Vidéo -->
+                <div class="gallery-item" style="cursor:default;">
+                    <video id="portfolioVideo" controls playsinline preload="metadata" style="position:relative; z-index:5;">
+                        <source src="media/IMG_0200.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-video" style="margin-right:6px"></i> Vidéo</h4>
+                        <p>Découvrez mon parcours et mes projets en mouvement.</p>
+                    </div>
+                </div>
+
+                <!-- Image 1 -->
+                <div class="gallery-item">
+                    <img src="media/WhatsApp Image 2026-02-11 at 17.04.36.jpeg" alt="Galerie 1">
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-camera" style="margin-right:6px"></i> Événement</h4>
+                        <p>Séance de travail avec la section design du club informatique.</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="gallery-item">
+                    <img src="media/WhatsApp Image 2026-02-11 at 17.04.37.jpeg" alt="Galerie 2">
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-trophy" style="margin-right:6px"></i> Compétition</h4>
+                        <p>Lauréat de l'hackathon "Back to school by TapTap Send".</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="gallery-item">
+                    <img src="media/WhatsApp Image 2026-02-11 at 17.04.38.jpeg" alt="Galerie 3">
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-lightbulb" style="margin-right:6px"></i> Innovation</h4>
+                        <p>Remise des prix après l'hackathon "Back to school by TapTap Send".</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-item">
+                    <img src="media/IMG_0231.jpeg" alt="Galerie 4">
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-users" style="margin-right:6px"></i> Collaboration</h4>
+                        <p>Séance de travail avec le Directeur Général de Ntfoods.</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-item">
+                    <img src="media/WhatsApp Image 2026-02-11 at 17.23.36.jpeg" alt="Galerie 5">
+                    <div class="gallery-caption">
+                        <h4><i class="fas fa-users" style="margin-right:6px"></i> Collaboration</h4>
+                        <p>Premier contrat professionnel pour la réalisation de Plateforme Intégrée ALN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-scroll-hint">
+            <i class="fas fa-arrow-left"></i> Glissez pour explorer <i class="fas fa-arrow-right"></i>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <h2 class="logo" style="color:white; margin-bottom:10px;">Joël<span>Dev.</span></h2>
+            <p>Innovation, créativité et excellence technique.</p>
+            <p style="margin-top:30px; font-size:0.9rem; color:#888;">&copy; 2026 Joël Marvin Tientcheu Siani. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- JS externe -->
+    <script src="js/main.js"></script>
+</body>
+</html>
