@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. TYPING EFFECT (amélioré avec curseur)
     // =========================================
     const textElement = document.querySelector('.typing-text');
-    const texts = ["Développeur Fullstack", "Developpeur Mobile", "Leader associatif", "Jeune entrepreneur"];
+    const texts = ["Développeur web", "Développeur Mobile", "Leader associatif", "Jeune entrepreneur"];
     let count = 0;
     let index = 0;
     let currentText = "";
