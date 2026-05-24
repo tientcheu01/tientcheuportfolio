@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // =========================================
-    // 1. TYPING EFFECT (amélioré avec curseur)
+    // 1. TYPING EFFECT
     // =========================================
     const textElement = document.querySelector('.typing-text');
     const texts = ["Développeur web", "Développeur Mobile", "Leader associatif", "Jeune entrepreneur"];
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     (function type() {
         currentText = texts[count % texts.length];
-        
         if (isDeleting) {
             letter = currentText.substring(0, index - 1);
             index--;
@@ -21,20 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
             letter = currentText.substring(0, index + 1);
             index++;
         }
-        
         textElement.textContent = letter + '|';
-        
         let speed = isDeleting ? 50 : 100;
-        
         if (!isDeleting && index === currentText.length) {
-            speed = 2000;
-            isDeleting = true;
+            speed = 2000; isDeleting = true;
         } else if (isDeleting && index === 0) {
-            isDeleting = false;
-            count++;
-            speed = 500;
+            isDeleting = false; count++; speed = 500;
         }
-        
         setTimeout(type, speed);
     })();
 
@@ -49,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.querySelector('i').classList.toggle('fa-times');
     });
 
-    // Fermer le menu au clic sur un lien
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -95,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // Skills & Portfolio cards animation
     const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -112,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.skill-progress, .portfolio-card').forEach(el => cardObserver.observe(el));
 
     // =========================================
-    // 5. PORTFOLIO FILTER (amélioré)
+    // 5. PORTFOLIO FILTER
     // =========================================
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.portfolio-card');
@@ -122,11 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.filter-btn.active').classList.remove('active');
             btn.classList.add('active');
             const filter = btn.getAttribute('data-filter');
-
             projectCards.forEach((card, i) => {
                 card.classList.remove('show');
                 card.classList.add('hidden');
-                
                 if (filter === 'all' || card.getAttribute('data-category') === filter) {
                     card.classList.remove('hidden');
                     setTimeout(() => card.classList.add('show'), i * 80);
@@ -136,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // =========================================
-    // 6. HEADER SCROLL EFFECT (amélioré)
+    // 6. HEADER SCROLL EFFECT
     // =========================================
     let lastScroll = 0;
     const header = document.getElementById('header');
@@ -152,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.padding = "";
         }
 
-        // Active nav link based on scroll position
         const sections = document.querySelectorAll('section[id]');
         sections.forEach(section => {
             const top = section.offsetTop - 100;
@@ -176,13 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const particlesContainer = document.getElementById('particles');
     if (particlesContainer) {
         const colors = ['#FF6F61', '#FF9A8B', '#FFB7A5', '#FF6F61'];
-        
         function createParticle() {
             const particle = document.createElement('div');
             particle.classList.add('particle');
             const size = Math.random() * 8 + 3;
             const color = colors[Math.floor(Math.random() * colors.length)];
-            
             particle.style.cssText = `
                 width: ${size}px; height: ${size}px;
                 background: ${color};
@@ -190,18 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 animation-duration: ${Math.random() * 8 + 6}s;
                 animation-delay: ${Math.random() * 5}s;
             `;
-            
             particlesContainer.appendChild(particle);
-            
-            // Remove after animation
             setTimeout(() => particle.remove(), 15000);
         }
-        
-        // Create initial particles
-        for (let i = 0; i < 20; i++) {
-            setTimeout(createParticle, i * 300);
-        }
-        // Keep creating particles
+        for (let i = 0; i < 20; i++) setTimeout(createParticle, i * 300);
         setInterval(createParticle, 800);
     }
 
@@ -212,7 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const cursorGlow = document.createElement('div');
         cursorGlow.classList.add('cursor-glow');
         document.body.appendChild(cursorGlow);
-        
         document.addEventListener('mousemove', (e) => {
             cursorGlow.style.left = e.clientX + 'px';
             cursorGlow.style.top = e.clientY + 'px';
@@ -250,17 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
             startX = e.pageX - galleryTrack.offsetLeft;
             scrollLeft = galleryTrack.scrollLeft;
         });
-        
-        galleryTrack.addEventListener('mouseleave', () => {
-            isDown = false;
-            galleryTrack.classList.remove('dragging');
-        });
-        
-        galleryTrack.addEventListener('mouseup', () => {
-            isDown = false;
-            galleryTrack.classList.remove('dragging');
-        });
-        
+        galleryTrack.addEventListener('mouseleave', () => { isDown = false; galleryTrack.classList.remove('dragging'); });
+        galleryTrack.addEventListener('mouseup', () => { isDown = false; galleryTrack.classList.remove('dragging'); });
         galleryTrack.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
@@ -269,16 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
             galleryTrack.scrollLeft = scrollLeft - walk;
         });
 
-        // Nav buttons
         const prevBtn = document.querySelector('.gallery-nav.prev');
         const nextBtn = document.querySelector('.gallery-nav.next');
-        
-        if (prevBtn) prevBtn.addEventListener('click', () => {
-            galleryTrack.scrollBy({ left: -400, behavior: 'smooth' });
-        });
-        if (nextBtn) nextBtn.addEventListener('click', () => {
-            galleryTrack.scrollBy({ left: 400, behavior: 'smooth' });
-        });
+        if (prevBtn) prevBtn.addEventListener('click', () => galleryTrack.scrollBy({ left: -400, behavior: 'smooth' }));
+        if (nextBtn) nextBtn.addEventListener('click', () => galleryTrack.scrollBy({ left: 400, behavior: 'smooth' }));
     }
 
     // =========================================
@@ -296,10 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const step = Math.ceil(target / 40);
                 const timer = setInterval(() => {
                     current += step;
-                    if (current >= target) {
-                        current = target;
-                        clearInterval(timer);
-                    }
+                    if (current >= target) { current = target; clearInterval(timer); }
                     h2.textContent = current + suffix;
                 }, 40);
                 counterObserver.unobserve(entry.target);
@@ -324,9 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const rotateY = (centerX - x) / 15;
                 card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
             });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = '';
-            });
+            card.addEventListener('mouseleave', () => { card.style.transform = ''; });
         });
     }
 
@@ -338,6 +294,27 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.add('reveal');
             revealObserver.observe(header);
         }
+    });
+
+    // =========================================
+    // 14. AWARD SECTION — TABS
+    // =========================================
+    const tabBtns = document.querySelectorAll('.award-tab-btn');
+    const tabPanels = document.querySelectorAll('.award-tab-panel');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.getAttribute('data-tab');
+
+            // Désactiver tous
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabPanels.forEach(p => p.classList.remove('active'));
+
+            // Activer le bon
+            btn.classList.add('active');
+            const panel = document.getElementById('tab-' + target);
+            if (panel) panel.classList.add('active');
+        });
     });
 
 });
